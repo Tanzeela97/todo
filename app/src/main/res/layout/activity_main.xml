@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activity.MainActivity.MainActivity"
+    android:background="#374096FF">
+
+
+    <ImageView
+        android:id="@+id/image_view"
+        android:layout_width="300dp"
+        android:layout_height="236dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="120dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="243dp"
+        android:layout_height="78dp"
+        android:layout_gravity="center"
+        android:text="My Todo List"
+        android:textColor="#000"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        />
+
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="359dp"
+        android:layout_height="68dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="30sp"
+        android:textStyle="bold" />
+
+    <!--    <Button-->
+<!--        android:id="@+id/google_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="50dp"-->
+<!--        android:background="@color/purple_200"-->
+<!--        android:text="Click to Sign in with Google"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="#7EF8F1F1"-->
+<!--        android:textSize="24sp"-->
+<!--        />-->
+
+</LinearLayout>
+</layout>

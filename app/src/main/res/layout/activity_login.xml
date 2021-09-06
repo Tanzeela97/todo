@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.Login.LoginActivity"
+    android:orientation="vertical"
+    >
+
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/loginToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#304FFE"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        />
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"/>
+
+    <EditText
+        android:id="@+id/login_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:inputType=""
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/ic_email"
+        android:drawablePadding="10dp"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter password"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:textColorHint="#000"
+        android:inputType="textPassword"
+        android:background="@drawable/input"
+        android:drawableLeft="@drawable/ic_lock"
+        android:drawablePadding="10dp"
+        android:padding="10dp"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:background="#22FFFFFF"
+        />
+
+    <TextView
+        android:id="@+id/login_page_question"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Don't have an account? Register"
+        android:textColor="#120D0D" />
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/fbLogin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+       />
+
+
+    <TextView
+        android:id="@+id/fb_email"
+        android:layout_width="89dp"
+        android:layout_height="18dp"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Email"
+        android:textColor="#120D0D" />
+
+
+    <Button
+        android:id="@+id/id_map"
+        android:layout_width="37dp"
+        android:layout_height="31dp"
+        android:layout_gravity="center"
+        android:background="@drawable/map_icon"
+
+        />
+
+</LinearLayout>
+</layout>
