@@ -15,9 +15,13 @@ public class data {
         this.description=description;
     }
 
+//    public String getDescription() {
+//        return description;
+//    }
+
     public String getDescription() {
         return description;
-    }
+   }
 
     public String getId() {
         return id;
